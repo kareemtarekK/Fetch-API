@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 800px;
+    margin: 30px  auto;
+    padding: 15px;
+    background-color: #f6f6f6;
+}
+.container .header_div{
+    padding: 15px;
+    background-color: white;
+    display: flex;
+}
+.container .header_div input{
+    padding: 10px 15px;
+    width: 100%;
+    height: 53px;
+    border: none;
+    font-size: 17px;
+    outline: none;
+    font-weight: bold;
+}
+.container .header_div input::placeholder{
+    opacity: .7;
+}
+.container .header_div input:focus{
+    outline: 2px solid #f44336;
+}
+.container .header_div span{
+    width: 150px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    background-color: #f44336;
+    margin-left: 15px;
+    font-weight: bold;
+    color: #EEE;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container .content_div{
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+.container .content_div .ALLDATA{
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: bold;
+    color: #085786;
+}
+.container .content_div .ALLDATA:not(:last-child){
+    margin-bottom: 10px;
+}
+.container .content_div .ALLDATA a,
+.container .content_div .ALLDATA span{
+    float: right;
+    text-align: center;
+}
+.container .content_div .ALLDATA a{
+    width: 90px;
+    background-color: #085786;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.container .content_div .ALLDATA span:not(.span){
+    margin-right: 15px;
+    background-color: #b3261e;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+.container .content_div .ALLDATA .span{
+    float: left;
+}
+@media(min-width:320px) and (max-width:480px){
+    .container{
+        width: 100%;
+    }
+    .container .content_div .ALLDATA a{
+        width: 50px;
+        text-align: center;
+    }
+    .container .content_div .ALLDATA span:not(.span){
+        width: 70px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    .container .content_div .ALLDATA .span{
+        width: 75px;
+        word-wrap: break-word;
+        font-size: 15px;
+    }
+    .container .content_div .ALLDATA span{
+        margin-right : 5px
+    }
+}
+.no_repos{
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #eee;
+    text-align: center;
+    color: #085786;
+}
